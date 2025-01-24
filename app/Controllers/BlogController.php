@@ -11,8 +11,11 @@ class BlogController extends BaseController
     public function index()
     {
         $articleModel = new ArticleModel();
-        $data['articles'] = $articleModel->findAll();
 
+        $perPage = 10;
+        $data['articles'] = $articleModel->paginate($perPage);
+        $data['pager'] = $articleModel->pager;
+        
         return view('admin/blog/index', $data);
     }
 
@@ -24,7 +27,7 @@ class BlogController extends BaseController
     public function save()
     {
         $articleModel = new ArticleModel();
-        
+
         $image = $this->request->getFile('image');
         $imageName = '';
 
@@ -58,7 +61,7 @@ class BlogController extends BaseController
     public function update($id)
     {
         $articleModel = new ArticleModel();
-        
+
         $image = $this->request->getFile('image');
         $imageName = $this->request->getPost('old_image');
 
@@ -87,5 +90,16 @@ class BlogController extends BaseController
         $articleModel->delete($id);
 
         return redirect()->route('blog.index')->with('success', 'Article deleted successfully!');
+    }
+
+    public function publicBlog()
+    {
+        $articleModel = new ArticleModel();
+
+        $perPage = 10;
+        $data['articles'] = $articleModel->paginate($perPage);
+        $data['pager'] = $articleModel->pager;
+
+        return view('blog', $data);
     }
 }

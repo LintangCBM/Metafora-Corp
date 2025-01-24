@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 24, 2025 at 03:20 AM
+-- Generation Time: Jan 24, 2025 at 10:42 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -43,7 +43,11 @@ CREATE TABLE `articles` (
 
 INSERT INTO `articles` (`id`, `title`, `content`, `image`, `author`, `created_at`, `updated_at`) VALUES
 (1, 'test', 'testing stuff', '1737605733_c1d0452057da93fd85c8.png', '', NULL, NULL),
-(6, 'gsgfds', 'weafsdf', '1737676109_459f7dbafa0fd43bf40d.png', 'ferafds', '2025-01-23 07:13:12', '2025-01-23 23:48:29');
+(14, 'Hi im steve', 'steve is steve', '1737710955_4dc3da6dc2dc8a9ac6e4.png', 'steve', '2025-01-24 08:35:51', '2025-01-24 09:30:48'),
+(15, 'hi im alex', 'alex is alex', '1737708176_dd8fa8c205e6ab061cb0.png', 'alex', '2025-01-24 08:42:56', NULL),
+(16, 'wawawa', 'wawawa', '1737710783_5b5094f25bb0c8465383.jpg', 'wawawa', '2025-01-24 09:26:23', NULL),
+(17, 'no way', 'sherlock', '', 'yeah', '2025-01-24 09:39:41', NULL),
+(18, 'theres way', 'holmes', '1737711635_d037da620e507d1ade59.png', 'nah', '2025-01-24 09:40:35', NULL);
 
 -- --------------------------------------------------------
 
@@ -127,7 +131,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `migrations`

@@ -347,11 +347,6 @@ main {
   color: #ffffff;
 }
 
-.pagination a.active {
-  background: #52616b;
-  color: #ffffff;
-}
-
 /* Who We Are Page */
 /* Who We Are Section */
 .who-we-are {
@@ -945,13 +940,13 @@ main {
 }
 
 .admin-blog .container {
-  max-width: 950px;
+  max-width: 900px;
   background: #fff;
-  margin: 20px auto;
+  margin: 20px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-left: 220px;
+  margin-left: 250px;
 }
 
 .admin-blog .header {
@@ -1039,16 +1034,13 @@ main {
 }
 
 .add-edit-blog .container {
-  width: 100%;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 20px;
   padding: 20px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  overflow-y: auto;
-  margin-left: 240px;
+  margin-left: 250px;
 }
 
 .add-edit-blog .header {

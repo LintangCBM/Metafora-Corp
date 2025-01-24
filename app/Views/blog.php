@@ -51,59 +51,25 @@
       <div class="container">
         <h2>Insights</h2>
         <div class="blog-grid">
-          <!-- Blog Cards -->
-          <div class="blog-card">
-            <img src="../images/night-city.jpg" alt="Blog 1" />
-            <h4>
-              <a href="#">
-                Perusahaan IoT Ini Kembangkan Building Management System
-              </a>
-            </h4>
-            <p>December 4, 2024 | By Admin</p>
-          </div>
-          <div class="blog-card">
-            <img src="../images/night-city.jpg" alt="Blog 2" />
-            <h4>
-              <a href="#"> Industry 4.0 vs Society 5.0 </a>
-            </h4>
-            <p>December 3, 2024 | By Admin</p>
-          </div>
-          <div class="blog-card">
-            <img src="../images/night-city.jpg" alt="Blog 3" />
-            <h4>
-              <a href="#">
-                Pengaruh Penggunaan Sistem Informasi bagi Perusahaan Anda
-              </a>
-            </h4>
-            <p>December 2, 2024 | By Admin</p>
-          </div>
-          <div class="blog-card">
-            <img src="../images/night-city.jpg" alt="Blog 4" />
-            <h4>
-              <a href="#">
-                Peduli Keselamatan Smartphone Zombies, Korea Selatan Luncurkan
-                Smombie Warning System
-              </a>
-            </h4>
-            <p>December 1, 2024 | By Admin</p>
-          </div>
-          <div class="blog-card">
-            <img src="../images/night-city.jpg" alt="Blog 4" />
-            <h4><a href="#"> Typeface dan Font, Beda atau Sama? </a></h4>
-            <p>November 30, 2024 | By Admin</p>
-          </div>
+          <?php if (!empty($articles)): ?>
+            <?php foreach ($articles as $article): ?>
+              <div class="blog-card">
+                <img src="<?= base_url('uploads/' . esc($article['image'])) ?>" alt="<?= esc($article['title']) ?>" />
+                <h4>
+                  <a href="#">
+                    <?= esc($article['title']) ?>
+                  </a>
+                </h4>
+                <p><?= date('F j, Y', strtotime($article['created_at'])) ?> | By <?= esc($article['author']) ?></p>
+              </div>
+            <?php endforeach; ?>
+          <?php else: ?>
+            <p>No articles available.</p>
+          <?php endif; ?>
         </div>
-        <!-- Pagination -->
+
         <div class="pagination">
-          <a href="#">&laquo; First</a>
-          <a href="#">&lt; Previous</a>
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">Next &gt;</a>
-          <a href="#">Last &raquo;</a>
+          <?= $pager->links() ?>
         </div>
       </div>
     </section>
