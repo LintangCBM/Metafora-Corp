@@ -62,6 +62,10 @@
                     </tr>
                 <?php endforeach; ?>
             </table>
+
+            <div style="margin-top: 20px;" class="pagination">
+                <?= $pager->links() ?>
+            </div>
         </div>
     </div>
     <?= $this->endSection() ?>

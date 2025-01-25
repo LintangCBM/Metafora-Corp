@@ -20,7 +20,6 @@
                 <h1>Add New Article</h1>
             </div>
             <form action="<?= route_to('blog.save') ?>" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
                 <div class="form-group">
                     <label for="title">Title</label>
                     <input type="text" name="title" placeholder="Max Title length: 100" maxlength="100" required>

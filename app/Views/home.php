@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <div class="logo">Metafora Corp</div>
     <nav>
@@ -35,9 +34,7 @@
     </div>
   </header>
 
-  <!-- Main -->
   <main>
-    <!-- Description Section -->
     <section class="description">
       <h1>METAFORA CORP</h1>
       <p>
@@ -51,7 +48,6 @@
       </div>
     </section>
 
-    <!-- Demo Section -->
     <section class="demo">
       <img src="../images/erp.png" alt="Demo" />
       <div class="content">
@@ -60,7 +56,6 @@
       </div>
     </section>
 
-    <!-- Service Package Section -->
     <section class="service-package">
       <h2>Website Service Packages From Our Company</h2>
       <div class="packages">
@@ -105,7 +100,6 @@
       </div>
     </section>
 
-    <!-- Benefits Section -->
     <section class="benefits">
       <h2>Benefits Of Our Company</h2>
       <div class="benefit-grid">
@@ -147,7 +141,6 @@
       </div>
     </section>
 
-    <!-- Corporation Section -->
     <section class="corporation">
       <h2>Our Corporation</h2>
       <p>
@@ -166,7 +159,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">

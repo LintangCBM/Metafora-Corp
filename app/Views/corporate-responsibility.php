@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <div class="logo">Metafora Corp</div>
     <nav>
@@ -35,9 +34,7 @@
     </div>
   </header>
 
-  <!-- Main -->
   <main>
-    <!-- Description Section -->
     <section class="description">
       <h1>Corporate Social Responsibility</h1>
       <p>
@@ -138,7 +135,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">

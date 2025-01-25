@@ -23,7 +23,6 @@
                 <p style="color: red;"><?= session()->getFlashdata('error') ?></p>
             <?php endif; ?>
             <form action="<?= route_to('blog.update', esc($article['id'])) ?>" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
                 <input type="hidden" name="old_image" value="<?= esc($article['image']) ?>">
                 <div class="form-group">
                     <label for="title">Title</label>

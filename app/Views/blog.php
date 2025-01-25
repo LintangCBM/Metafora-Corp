@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <div class="logo">Metafora Corp</div>
     <nav>
@@ -35,9 +34,7 @@
     </div>
   </header>
 
-  <!-- Main -->
   <main>
-    <!-- Description Section -->
     <section class="description">
       <h1>Technology Insider</h1>
       <p>List of article from Technology Sector</p>
@@ -46,7 +43,6 @@
       </div>
     </section>
 
-    <!-- Blog Insights Section -->
     <section class="insights-section">
       <div class="container">
         <h2>Insights</h2>
@@ -56,7 +52,7 @@
               <div class="blog-card">
                 <img src="<?= base_url('uploads/' . esc($article['image'])) ?>" alt="<?= esc($article['title']) ?>" />
                 <h4>
-                  <a href="#">
+                  <a href="<?= route_to('blog.view', $article['id']) ?>">
                     <?= esc($article['title']) ?>
                   </a>
                 </h4>
@@ -75,7 +71,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">

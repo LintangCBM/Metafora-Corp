@@ -15,7 +15,7 @@ class BlogController extends BaseController
         $perPage = 10;
         $data['articles'] = $articleModel->paginate($perPage);
         $data['pager'] = $articleModel->pager;
-        
+
         return view('admin/blog/index', $data);
     }
 
@@ -101,5 +101,17 @@ class BlogController extends BaseController
         $data['pager'] = $articleModel->pager;
 
         return view('blog', $data);
+    }
+
+    public function view($id)
+    {
+        $articleModel = new ArticleModel();
+        $data['article'] = $articleModel->find($id);
+
+        if (!$data['article']) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Article not found');
+        }
+
+        return view('view', $data);
     }
 }

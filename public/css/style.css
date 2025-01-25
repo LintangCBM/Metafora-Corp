@@ -331,6 +331,7 @@ main {
   gap: 5px;
   margin-top: 40px;
   margin-bottom: 40px;
+  list-style: none;
 }
 
 .pagination a {
@@ -343,6 +344,42 @@ main {
 }
 
 .pagination a:hover {
+  background-color: #52616b;
+  color: #ffffff;
+}
+
+/* article section */
+.blog-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 80px;
+  text-align: center;
+}
+
+.blog-view img {
+  width: auto;
+  height: 300px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.blog-view p {
+  margin-bottom: 60px;
+  text-align: justify;
+}
+
+.blog-view a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border: 1px solid #52616b;
+  border-radius: 10px;
+  transition: all 0.15s ease;
+}
+
+.blog-view a:hover {
   background-color: #52616b;
   color: #ffffff;
 }
@@ -988,7 +1025,6 @@ main {
 .admin-blog .add-news-btn:hover {
   background-color: #218838;
   transition: all 0.15s ease;
-
 }
 
 .admin-blog .news-table {
@@ -1010,9 +1046,8 @@ main {
 }
 
 .admin-blog .news-table img {
-  width: 50px;
+  width: auto;
   height: 50px;
-  border-radius: 5px;
 }
 
 .admin-blog .news-table a {
@@ -1048,11 +1083,6 @@ main {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
-}
-
-.add-edit-blog .header .icon {
-  width: 40px;
-  height: 40px;
 }
 
 .add-edit-blog .header h1 {

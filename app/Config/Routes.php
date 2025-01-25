@@ -9,6 +9,7 @@ $routes->get('/', 'Home::index');
 
 $routes->get('home', 'Home::index');
 $routes->get('blog', 'BlogController::publicBlog');
+$routes->get('view/(:num)', 'BlogController::view/$1', ['as' => 'blog.view']);
 $routes->get('who-we-are', 'Home::whoWeAre');
 $routes->get('corporate-responsibility', 'Home::corporateResponsibility');
 $routes->get('contact-us', 'Home::contactUs');

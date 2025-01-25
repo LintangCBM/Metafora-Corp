@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <div class="logo">Metafora Corp</div>
     <nav>
@@ -35,9 +34,7 @@
     </div>
   </header>
 
-  <!-- Main -->
   <main>
-    <!-- Description Section -->
     <section class="description">
       <h1>Connect With Us</h1>
       <p>
@@ -49,7 +46,6 @@
       </div>
     </section>
 
-    <!-- Maps Section -->
     <section class="map">
       <div>
         <img src="../images/mapping.png" alt="Map Location" />
@@ -64,7 +60,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact">
       <div class="container">
         <div class="content">
@@ -84,7 +79,6 @@
       </div>
     </section>
 
-    <!-- Social Media Section -->
     <section class="social-media">
       <div class="container">
         <div class="icons">
@@ -109,7 +103,6 @@
       </div>
     </section>
 
-    <!-- Career Section -->
     <section class="career">
       <div class="container">
         <div class="content">
@@ -121,7 +114,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">

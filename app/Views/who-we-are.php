@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <div class="logo">Metafora Corp</div>
     <nav>
@@ -35,9 +34,7 @@
     </div>
   </header>
 
-  <!-- Main -->
   <main>
-    <!-- Description Section -->
     <section class="description">
       <h1>Our Vision</h1>
       <p>
@@ -50,7 +47,6 @@
       </div>
     </section>
 
-    <!-- Who We Are Section -->
     <section class="who-we-are">
       <div class="first-group">
         <h2 class="title">Metafora Corp</h2>
@@ -110,7 +106,6 @@
       </div>
     </section>
 
-    <!-- Values Section -->
     <section class="values">
       <h2>Metafora Corp Values</h2>
       <div class="values-list">
@@ -133,7 +128,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">
